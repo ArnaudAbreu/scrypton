@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["scrypton*"]
+exclude = ["docs*", "tests*", "workflows*"]
+
+[project]
+name = "scrypton"
+version = "0.0.1"
+authors = [
+    {name = "Arnaud Abreu", email = "arnaud.abreu.p@gmail.com"}
+]
+description = "A package to handle data paths and metadata computation"
+readme = "README.md"
+keywords = ["Data paths", "Data exploration", "Data loading", "Metadata computation"]
+dependencies = [
+    "Jinja2"
+]
+
+[project.scripts]

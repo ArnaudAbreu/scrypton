@@ -16,7 +16,9 @@ description = "A package to handle data paths and metadata computation"
 readme = "README.md"
 keywords = ["Data paths", "Data exploration", "Data loading", "Metadata computation"]
 dependencies = [
+    "python-slugify",
     "Jinja2"
 ]
 
 [project.scripts]
+scrypton = "scrypton:scrypton"

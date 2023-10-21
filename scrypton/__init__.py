@@ -1,0 +1,1 @@
+from .scrypton import main as scrypton

@@ -1,11 +1,15 @@
 import argparse
 import os
+
 from jinja2 import Environment, FileSystemLoader
 from slugify import slugify
 
 scrypton_folder = os.path.dirname(__file__)
+print(f"scrypton_folder: {scrypton_folder}")
 root_folder = os.path.dirname(scrypton_folder)
+print(f"root_folder: {root_folder}")
 template_folder = os.path.join(root_folder, "templates")
+print(f"template_folder: {template_folder}")
 
 
 def parse_args() -> argparse.Namespace:

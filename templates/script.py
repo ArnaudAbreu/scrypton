@@ -1,3 +1,6 @@
+"""
+{{description}}
+"""
 import argparse
 import logging
 from logging.handlers import RotatingFileHandler
@@ -27,7 +30,7 @@ def parse_args() -> argparse.Namespace:
         argparse.Namespace: The parsed arguments.
     """
     parser = argparse.ArgumentParser(
-        description="Init a dope project."
+        description="{{description}}"
     )
     parser.add_argument(
         "--input",

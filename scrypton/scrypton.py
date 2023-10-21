@@ -38,11 +38,13 @@ def main() -> None:
     """
     args = parse_args()
     path = args.path
+    script_name = os.path.basename(path)
+    script_name = script_name.replace(".py", "")
     description = args.description
     environment = Environment(loader=FileSystemLoader(template_folder))
     template = environment.get_template("script.py")
     content = template.render(
-        slug=slugify(os.path.basename(path)),
+        slug=slugify(script_name),
         description=description
     )
     with open(path, "w", encoding="utf-8") as f:

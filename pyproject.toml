@@ -12,7 +12,7 @@ version = "0.0.1"
 authors = [
     {name = "Arnaud Abreu", email = "arnaud.abreu.p@gmail.com"}
 ]
-description = "A package to handle data paths and metadata computation"
+description = "A package to generate scripts from templates"
 readme = "README.md"
 keywords = ["Scripting", "Templates"]
 dependencies = [

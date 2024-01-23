@@ -16,27 +16,26 @@
 
 ## About scrypton
 
-A brief description of what this project does and who it's for
+Scrypton is a command line tool that generates python scripts. It creates a python script with a docstring, a logger, a main function and a `__name__ == "__main__"` block.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
-Describe how to install the project and its dependencies.
+1. clone this repo
+2. cd into the repo
+3. run `pip install -e .`
 
 ## Usage
 
-Describe how to use the project.
+Run `scrypton --help` to see the available commands.
 
-## Contributing
+To create a script called `hello.py` run `scrypton hello.py --description "This script is just an empty script example."`. This will create a file called `hello.py` in the current directory. The file contains the skeleton of a python script with:
 
-Describe how to contribute to the project.
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+- a docstring
+- a logger
+- a main function
+- a `__name__ == "__main__"` block

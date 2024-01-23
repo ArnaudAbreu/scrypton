@@ -14,7 +14,7 @@ authors = [
 ]
 description = "A package to handle data paths and metadata computation"
 readme = "README.md"
-keywords = ["Data paths", "Data exploration", "Data loading", "Metadata computation"]
+keywords = ["Scripting", "Templates"]
 dependencies = [
     "python-slugify",
     "Jinja2"
